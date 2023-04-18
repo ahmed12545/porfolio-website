@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    position: fixed;
+    background-color: whitesmoke;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px;
+}
+.logo{
+    color: rgb(0, 160, 253);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+header nav a{
+    color: rgb(0, 90, 253);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2em;
+    padding: 0 15px;
+}
+header nav a:hover{
+    color:rgb(0, 150, 253);
+}
+section{
+    padding: 100px 200px;
+}
+.main{
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+.main h2{
+    color:white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.main h2 span{
+    color:rgb(0, 160, 253);
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+.main h3{
+    color:white;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 10px 0 30px;
+    letter-spacing: 1px;
+}
+.mainbtt{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    background-color:rgb(0, 160, 253);
+    display: inline-block;
+    padding:0.9375em 2.1875em;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    transition: 0.6s ease;
+}
+.mainbtt:hover{
+    background-color:rgb(0, 90, 253);
+    transform:scale(1.1)
+}
+.socialicons a{
+    color: white;
+    font-size: 1.6em;
+    padding-right: 30px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color:rgb(0, 160, 253);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 17.25em;
+    height: fit-content;
+    box-shadow: 0 5px 25px rgba(1, 1, 1, 25%);
+    padding: 25px;
+    margin: 15px;
+    transition: 0.6s ease;
+}
+.card:hover{
+    transform:scale(1.1)
+}
+.icon{
+    color:rgb(0, 160, 253);
+    font-size: 8em;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color:rgb(0, 160, 253);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects{
+    background-color: rgb(30, 30, 30);
+}
+.projects .content{
+    margin-top: 30px;
+}
+.project-card{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    width: 16em;
+    min-height: 18em;
+    overflow: hidden;
+    transition: 0.6s ease;
+}
+.project-card:hover{
+    transform: scale(1.1);
+}
+.project-card:hover .project-img img{
+    opacity: 0.9;
+}
+.project-img img{
+    width: 100%;
+}
+.project-info{
+    padding: 1em;
+    text-align: center;
+}
+.project-info strong{
+    font-size: 1.3em;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.project-info p{
+    font-size: 0.9em;
+}
+.contact .icon{
+    font-size: 4.5em;
+}
+.contact h3{
+    color: black;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 2em;
+    display:flex;
+    justify-content: space-between;
+}
+footer .footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: rgb(0, 160, 253);
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main h2{
+        font-size: 1em;
+    }
+
+    .main h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact p {
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main h2{
+        font-size: 0.8em;
+    }
+
+    .main h3{
+        font-size: 1.4em;
+    }
+    .contact p {
+        overflow-wrap: break-word;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+     
+    }
+    .contact p {
+        overflow-wrap: break-word;
+    }
+}
+
+    
